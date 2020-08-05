@@ -5,9 +5,35 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Code Quiz</title>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css" integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
     </head>
     <body>
+        <nav class="nav">
+            <a class="nav-link active" href="Score.html">High Scores</a>
+            <a class="nav-link ml-auto">Time:</a>
+            <a class="nav-link " id="timer"></a>
+          </nav>
+          <div class="d-flex justify-content-center mt-2">
+              <div class="card">
+                <img src="images/harry-potter-hogwarts-castle-slice-01.png" class="card-img-top" alt="Hogwarts">
+                    <div class="card-body text-center">
+                    <h4 class="card-title" id="question">Harry Potter Quiz</h4>
+                    <button class="btn btn-primary" type="submit" id="start">Start</button>
+                        <div class="row mt-3">
+                            <button class="btn btn-primary" type="submit" id="A">A) </button>
+                        </div>
+                        <div class="row mt-3">
+                            <button class="btn btn-primary" type="submit" id="B">B) </button>
+                        </div>
+                        <div class="row mt-3">
+                            <button class="btn btn-primary" type="submit" id="C">C) </button>
+                        </div>
+                        <div class="row mt-3">
+                            <button class="btn btn-primary" type="submit" id="D">D) </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
     </body>
     <script src="script.js"></script>
