@@ -8,33 +8,40 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css" integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
     </head>
     <body>
-        <nav class="nav">
+        <nav class="navbar">
             <a class="nav-link active" href="Score.html">High Scores</a>
-            <a class="nav-link ml-auto">Time:</a>
-            <a class="nav-link " id="timer"></a>
-          </nav>
-          <div class="d-flex justify-content-center mt-2">
+            <a id="navTimer" style="display: none;">Time: <span id="timer"></span></a>
+        </nav>
+
+          <main class="d-flex justify-content-center">
               <div class="card">
                 <img src="images/harry-potter-hogwarts-castle-slice-01.png" class="card-img-top" alt="Hogwarts">
-                    <div class="card-body text-center">
+                    <div class="card-header text-center">
                     <h4 class="card-title" id="question">Harry Potter Quiz</h4>
                     <button class="btn btn-primary" type="submit" id="start">Start</button>
+                    </div>
+                    <div class="card-body">
+                        <form id="user-form" style="display: none">
+                            <label for="initials">Enter your initials:</label>
+                            <input type="text" placeholder="Your initials here" name="initials" id="initials" />
+                            <button type="submit" class="btn btn-primary" src="Score.html">Submit</button>
+                          </form>
                         <div class="row mt-3">
-                            <button class="btn btn-primary" type="submit" id="A">A) </button>
+                            <button class="btn btn-primary" type="submit" id="A" style="display: none">A) </button>
                         </div>
                         <div class="row mt-3">
-                            <button class="btn btn-primary" type="submit" id="B">B) </button>
+                            <button class="btn btn-primary" type="submit" id="B" style="display: none">B) </button>
                         </div>
                         <div class="row mt-3">
-                            <button class="btn btn-primary" type="submit" id="C">C) </button>
+                            <button class="btn btn-primary" type="submit" id="C" style="display: none">C) </button>
                         </div>
                         <div class="row mt-3">
-                            <button class="btn btn-primary" type="submit" id="D">D) </button>
+                            <button class="btn btn-primary" type="submit" id="D" style="display: none">D) </button>
                         </div>
                     </div>
                 </div>
-            </div>
+            </main>
 
+            <script src="script.js"></script>
     </body>
-    <script src="script.js"></script>
 </html>

@@ -2,7 +2,7 @@
 <html lang="en-us">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, intitial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>High Scores</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css" integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
@@ -13,13 +13,16 @@
               <img src="images/harry-potter-hogwarts-castle-slice-01.png" class="card-img-top" alt="Hogwarts">
                   <div class="card-body text-center">
                   <h4 class="card-title" id="question">High Scores</h4>
-                  
+                  <div>
+                      <ol class="list-group" id="list">
+                      </ol>
+                  </div>
                   <a class="btn btn-primary" href="index.html" role="button">Go Back</a>
                   <button class="btn btn-primary" type="submit" id="Clear">Clear Scores</button>
                   </div>
               </div>
           </div>
-
+          <script src="score.js"></script>
     </body>
-    <script src="script.js"></script>
+    
 </html>
