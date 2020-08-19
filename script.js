@@ -81,7 +81,6 @@ userForm.addEventListener("click", function(event) {
   event.preventDefault();
   if (event.target.matches("button") === true) {
 
-    //storeUser();
     storeHighScores();
   }
 });
@@ -95,14 +94,15 @@ function replace() {
 };
 
 function storeHighScores() {
-  var temp = JSON.parse(localStorage.getItem("highScores"));
-  if (temp !== null) {
-    highScores.push(temp)
-  }
-      highScores.push(initials.value);
-      highScores.push(seconds);
+ // var temp = localStorage.getItem("highScores");
+ // if (temp !== null) {
+ //   highScores.push(temp)
+ //   console.log(temp)
+ // }
+      highScores.push(initials.value,seconds);
+      //highScores.push(seconds);
   console.log(highScores);
 
-  localStorage.setItem("highScores", JSON.stringify(highScores));
+  localStorage.setItem("highScores", highScores);
 }
 
