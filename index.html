@@ -1,47 +1,109 @@
 <!DOCTYPE html>
 <html lang="en-us">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Code Quiz</title>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css" integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
-    </head>
-    <body>
-        <nav class="navbar">
-            <a class="nav-link active" href="Score.html">High Scores</a>
-            <a id="navTimer" style="display: none;">Time: <span id="timer"></span></a>
-        </nav>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Code Quiz</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Jolly+Lodger"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css"
+      integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <a class="nav-link active" href="Score.html">High Scores</a>
+      <a id="navTimer" style="display: none">Time: <span id="timer"></span></a>
+    </nav>
 
-          <main class="d-flex justify-content-center">
-              <div class="card col-10 col-md-6 p-0">
-                <img src="images/harry-potter-hogwarts-castle-slice-01.png" class="card-img-top" alt="Hogwarts">
-                    <div class="card-header text-center">
-                    <h4 class="card-title" id="question">Harry Potter Quiz</h4>
-                    <button class="btn btn-primary" type="submit" id="start">Start</button>
-                    </div>
-                    <div class="card-body">
-                        <form id="user-form" style="display: none">
-                            <label for="initials">Enter your initials:</label>
-                            <input type="text" placeholder="Your initials here" name="initials" id="initials" />
-                            <button type="submit" class="btn btn-primary" href="Score.html" id="submit" >Submit</button>
-                          </form>
-                        <div class="row mt-3">
-                            <button class="btn btn-primary" type="submit" id="A" style="display: none">A) </button>
-                        </div>
-                        <div class="row mt-3">
-                            <button class="btn btn-primary" type="submit" id="B" style="display: none">B) </button>
-                        </div>
-                        <div class="row mt-3">
-                            <button class="btn btn-primary" type="submit" id="C" style="display: none">C) </button>
-                        </div>
-                        <div class="row mt-3">
-                            <button class="btn btn-primary" type="submit" id="D" style="display: none">D) </button>
-                        </div>
-                    </div>
-                </div>
-            </main>
+    <main class="d-flex justify-content-center">
+      <div class="card col-10 col-md-6 p-0">
+        <img
+          src="images/harry-potter-hogwarts-castle-slice-01.png"
+          class="card-img-top"
+          alt="Hogwarts"
+        />
+        <div class="card-header text-center">
+          <h4 class="card-title" id="question">Harry Potter Quiz</h4>
+          <button class="btn btn-secondary" type="submit" id="start">
+            Start
+          </button>
+        </div>
+        <div class="card-body">
+          <form id="user-form" style="display: none">
+            <label for="initials">Enter your initials:</label>
+            <input
+              type="text"
+              placeholder="Your initials here"
+              name="initials"
+              id="initials"
+            />
+            <a
+              type="submit"
+              class="btn btn-secondary"
+              href="Score.html"
+              id="submit"
+              role="button"
 
-            <script src="script.js"></script>
-    </body>
+            >
+              Submit
+          </a>
+          </form>
+          <div class="row mt-3">
+            <div class="col-6">
+              <button
+                class="btn btn-secondary"
+                type="submit"
+                id="A"
+                style="display: none"
+              >
+                A)
+              </button>
+            </div>
+            <div class="col-6">
+              <button
+                class="btn btn-secondary"
+                type="submit"
+                id="B"
+                style="display: none"
+              >
+                B)
+              </button>
+            </div>
+          </div>
+          <div class="row mt-3">
+            <div class="col-6">
+              <button
+                class="btn btn-secondary"
+                type="submit"
+                id="C"
+                style="display: none"
+              >
+                C)
+              </button>
+            </div>
+            <div class="col-6">
+              <button
+                class="btn btn-secondary"
+                type="submit"
+                id="D"
+                style="display: none"
+              >
+                D)
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
 </html>

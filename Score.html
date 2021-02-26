@@ -5,23 +5,25 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>High Scores</title>
+        <link href="https://fonts.googleapis.com/css?family=Jolly+Lodger" rel="stylesheet">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css" integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="style.css">
     </head>
     <body>
-        <div class="d-flex justify-content-center mt-5">
+        <main class="highScore d-flex justify-content-center">
+            <img src="images/crest.png" class="crest card-img-top" alt="Hogwarts">
             <div class="card">
-              <img src="images/harry-potter-hogwarts-castle-slice-01.png" class="card-img-top" alt="Hogwarts">
                   <div class="card-body text-center">
                   <h4 class="card-title" id="question">High Scores</h4>
-                  <div>
-                      <ol class="list-group" id="list">
-                      </ol>
-                  </div>
-                  <a class="btn btn-primary" href="index.html" role="button">Go Back</a>
-                  <button class="btn btn-primary" type="submit" id="Clear">Clear Scores</button>
+                    <div>
+                        <ol class="list-group" id="list">
+                        </ol>
+                    </div>
+                  <a class="btn btn-secondary" href="index.html" role="button">Go Back</a>
+                  <button class="btn btn-secondary" type="submit" id="Clear">Clear Scores</button>
                   </div>
               </div>
-          </div>
+        </main>
           <script src="score.js"></script>
     </body>
     
