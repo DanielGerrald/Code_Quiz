@@ -1,35 +1,38 @@
-html, body{
-    font-family: 'Jolly Lodger';
-    font-size: 20px;
-    color: #cccccc;
-    letter-spacing: 1px;
-    background-image: url("images/gallery.jpg");
-    background-color: #cccccc;
-    background-size: cover;
-  }
+html,
+body {
+  font-family: "Jolly Lodger";
+  font-size: 20px;
+  color: #cccccc;
+  letter-spacing: 1px;
+  background-image: url("images/gallery.jpg");
+  background-color: #cccccc;
+  background-size: cover;
+}
 
-  #navTimer{
-    font-size: 50px;
-    color: rgb(161, 37, 37);
-  }
-  .nav-link{
-    font-size: 50px;
-    color: goldenrod;
-  }
+#navTimer {
+  font-size: 50px;
+  color: rgb(161, 37, 37);
+}
+.nav-link {
+  font-size: 50px;
+  color: goldenrod;
+}
 
-  .card{
-    background-color: rgba(0,0,0,0)
-  }
-  .card-body{
-    background-color: rgba(0,0,0,0.6)
-  }
+.card {
+  background-color: rgba(0, 0, 0, 0);
+}
+.card-header {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.card-body {
+  background-color: rgba(0, 0, 0, 0.6);
+}
 
-  #user-form{
-    margin: 0 auto; 
-    width: 400px;
-  }
+#user-form {
+  margin: 0 auto;
+  width: 400px;
+}
 
-  .highScore{
-      padding-top: 70px;
-  }
-
+.highScore {
+  padding-top: 70px;
+}
